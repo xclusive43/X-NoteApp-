@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">X Note</string>
+    <string name="x_note">X Note</string>
+    <string name="notes">Notes</string>
+    <string name="title">Title <font fgcolor='#FF0101'>*</font></string>
+    <string name="star">*******************</string>
+    <string name="subtitle">Sub Title <font fgcolor='#FF0101'>*</font></string>
+    <string name="contactinfo">AJAY PRAJAPATI, SOFTWARE ENGINEER,\n\nTel: 6909608067
+\nEmail : ajayxd43@gmail.com \n\nLinkedIn: <a href="https://www.linkedin.com/in/ajay-prajapati%F0%9F%A6%BE-294b401ab/">Open linkedin</a>\nGitHub: <a href="https://github.com/xclusive43">Open GitHub</a>
+        </string>
+</resources>

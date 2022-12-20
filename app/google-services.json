@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "707348539308",
+    "project_id": "x-note-218cc",
+    "storage_bucket": "x-note-218cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707348539308:android:898498d1a9d4c4154ebc09",
+        "android_client_info": {
+          "package_name": "com.xclusive.x_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707348539308-qtgiap329saf3m1ad9nk2picu01ip25v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2VxlSalPiT-M4zrqflLaXLYXWiGygh80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707348539308-qtgiap329saf3m1ad9nk2picu01ip25v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
