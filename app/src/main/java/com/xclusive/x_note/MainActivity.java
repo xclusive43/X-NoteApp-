@@ -92,15 +92,15 @@ public class MainActivity extends AppCompatActivity {
         NOTE = getIntent().getStringExtra("NOTE");
         DATE = getIntent().getStringExtra("DATE");
         COLOR = getIntent().getStringExtra("COLOR");
-        update = getIntent().getIntExtra("TASK",0);
+        update = getIntent().getIntExtra("TASK", 0);
         id = getIntent().getStringExtra("ID");
-        if(update == 1){
-                Title.setText(TITLE);
-                subtitle.setText(SUB_TITLE);
-                input.setText(NOTE);
-                currentDateTime.setText(DATE);
-                editlayout.setBackgroundColor(Color.parseColor(COLOR));
-        }else{
+        if (update == 1) {
+            Title.setText(TITLE);
+            subtitle.setText(SUB_TITLE);
+            input.setText(NOTE);
+            currentDateTime.setText(DATE);
+            editlayout.setBackgroundColor(Color.parseColor(COLOR));
+        } else {
             Title.setText("");
             subtitle.setText("");
             input.setText("");
@@ -167,19 +167,23 @@ public class MainActivity extends AppCompatActivity {
                     input.append(" " + info.get(0));
                 }
             case 101:
-                Bundle bundle = Objects.requireNonNull(data).getExtras();
-                Bitmap bitmap = (Bitmap) bundle.get("data");
-                FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(bitmap);
-                FirebaseVision firebaseVision = FirebaseVision.getInstance();
-                FirebaseVisionTextRecognizer firebaseVisionTextRecognizer = firebaseVision.getOnDeviceTextRecognizer();
-                Task<FirebaseVisionText> textTask = firebaseVisionTextRecognizer.processImage(image);
-                textTask.addOnSuccessListener(firebaseVisionText -> {
-                    if (textTask.isSuccessful()) {
-                        input.append(firebaseVisionText.getText());
-                    }
-                });
-                textTask.addOnFailureListener(e -> {
-                });
+                try {
+                    Bundle bundle = Objects.requireNonNull(data).getExtras();
+                    Bitmap bitmap = (Bitmap) bundle.get("data");
+                    FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(bitmap);
+                    FirebaseVision firebaseVision = FirebaseVision.getInstance();
+                    FirebaseVisionTextRecognizer firebaseVisionTextRecognizer = firebaseVision.getOnDeviceTextRecognizer();
+                    Task<FirebaseVisionText> textTask = firebaseVisionTextRecognizer.processImage(image);
+                    textTask.addOnSuccessListener(firebaseVisionText -> {
+                        if (textTask.isSuccessful()) {
+                            input.append(firebaseVisionText.getText());
+                        }
+                    });
+                    textTask.addOnFailureListener(e -> {
+                    });
+                } catch (NullPointerException e) {
+                    e.printStackTrace();
+                }
                 break;
         }
     }
