@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView8"
@@ -65,7 +65,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/cabin"
-        android:text="Guwahati, 781037, Assam, India"
+        android:text="North-Guwahati, 781039, Assam, India"
         android:textAlignment="textStart"
         android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +80,7 @@
         android:fontFamily="@font/cabin_bold"
         android:letterSpacing="0.07"
         android:text="Contact"
+        android:visibility="invisible"
         android:textColor="@color/secondaryColor"
         android:textSize="@dimen/_20ssp"
         app:layout_constraintStart_toStartOf="@+id/textView10"
@@ -95,7 +96,9 @@
         android:text="@string/contactinfo"
         android:textAlignment="textStart"
         android:textColor="@color/grey"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 

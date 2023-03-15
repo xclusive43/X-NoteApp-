@@ -76,8 +76,6 @@ public class savednotes extends AppCompatActivity implements SearchView.OnQueryT
                 model_notes.add(new Model_notes(cursor.getString(0), cursor.getString(5), cursor.getString(6), cursor.getString(1)
                         , cursor.getString(4), cursor.getString(2)));
             }
-        } else {
-            Toast.makeText(this, "0", Toast.LENGTH_SHORT).show();
         }
         Collections.reverse(model_notes);
         Adapter_notes = new Adapter_notes(model_notes, savednotes.this);
@@ -155,7 +153,6 @@ public class savednotes extends AppCompatActivity implements SearchView.OnQueryT
 
         @Override
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
-
             new RecyclerViewSwipeDecorator.Builder(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
                     .addSwipeLeftBackgroundColor(ContextCompat.getColor(savednotes.this, R.color.transparent))
                     .addSwipeLeftActionIcon(R.drawable.delete)
