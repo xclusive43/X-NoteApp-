@@ -1,7 +1,11 @@
 ## X Note - Notes & To-Do List App
 Overview
 X Note is a powerful and intuitive notes and to-do list application designed to help you stay organized and productive. With a clean and user-friendly interface, X Note makes it easy to jot down notes, create to-do lists, and keep track of important tasks.
-
+## PlayStore 
+Link
+```link
+https://play.google.com/store/apps/details?id=com.xclusive.x_note&hl=en_IN
+```
 ## Features
 - Simple and Clean Interface: Easy to navigate and use.
 - Rich Text Editing: Format your notes with bold, italics, bullet points, and more.
